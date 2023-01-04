@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(30, 38%, 92%);
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+body .container {
+  height: 97vh;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+body .container .content {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+body .container .content .image .desk {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+}
+
+body .container .content .image .phone {
+  display: none;
+}
+
+body .container .content article {
+  width: 300px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 10px 10px 0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+body .container .content article h4,
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  margin: 0;
+  line-height: 25px;
+}
+body .container .content article h4 {
+  letter-spacing: 5px;
+}
+
+body .container .content article h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 10px 0;
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+  line-height: 30px;
+}
+
+body .container .content article .price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+body .container .content article .price h2 {
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  margin: 0;
+  font-family: "Fraunces";
+}
+
+body .container .content article .price span {
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-left: 15px;
+  color: hsl(228, 12%, 48%);
+}
+
+body .container .content article .btn {
+  background-color: hsl(158, 36%, 37%);
+  padding: 15px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+body .container .content article .btn a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-left: 10px;
+}
+
+body .container .content article .btn:hover {
+  background-color: hsl(158, 39%, 25%);
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  body .container {
+    height: 100%;
+  }
+
+  body .container .content {
+    flex-direction: column;
+  }
+
+  body .container .content .image .desk {
+    display: none;
+  }
+
+  body .container .content .image .phone {
+    display: flex;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  body .container .content article {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: 100%;
+  }
+
+  body .attribution {
+    display: none;
+  }
+}
